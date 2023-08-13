@@ -1,0 +1,32 @@
+.page-sidebar {
+    width: 300px;
+    box-shadow: 0px 3px 6px #00000029;
+    min-height: calc(100vh - 77px);
+    background: #ffffff 0% 0% no-repeat padding-box;
+    padding-top: 22px;
+}
+
+.sidebar-text {
+    width: 285px;
+    height: 60px;
+    background: #03aeee 0% 0% no-repeat padding-box;
+    border-radius: 50px 0px 0px 50px;
+    color: white;
+    display: flex;
+    justify-self: center;
+    align-content: center;
+    margin-left: 16px;
+    font-weight: 800;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.sidebar-text>img {
+    margin-right: 12px;
+    padding: 6px;
+    background-color: white;
+    border-radius: 50%;
+    height: 30px;
+}

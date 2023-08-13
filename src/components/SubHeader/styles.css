@@ -1,0 +1,12 @@
+.subheader {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #9d9d9d29;
+  height: 100px;
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}

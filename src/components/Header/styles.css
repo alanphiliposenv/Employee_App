@@ -1,0 +1,13 @@
+.page-header {
+  height: 77px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  display: fixed;
+}
+
+.page-header img {
+    position: relative;
+  top: 16px;
+  left: 46px;
+  width: 208px;
+  height: 45px;
+}

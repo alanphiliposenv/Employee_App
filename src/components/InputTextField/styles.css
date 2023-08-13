@@ -1,9 +1,0 @@
-.text-input {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.text-input input {
-    height: 50px;;
-}

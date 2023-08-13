@@ -1,6 +1,6 @@
 import { useState, type FC } from 'react';
-import Input from '../components/InputTextField/Input';
-import Button from '../components/Button/Button';
+import LoginInput from '../../components/LoginInput/LoginInput';
+import Button from '../../components/Button/Button';
 import './styles.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ const Login: FC = () => {
   const navigate = useNavigate();
 
   const handleSubmit = () => {
-    if (username && password) navigate('/employees');
+    if (username && password) navigate('/employee');
     else setShowError(true);
   };
 
@@ -26,19 +26,18 @@ const Login: FC = () => {
       <section id='form-section'>
         <div className='form-wrapper'>
           <img id='logo' src='/assets/img/kv-logo.png' alt='Logo' />
-
-          <Input
+          <LoginInput
             type='text'
             placeholder='Username'
             label='Username'
-            onChange={(e) => setUsername(e.target.value)}
+            onChange={setUsername}
             value={username}
           />
-          <Input
+          <LoginInput
             type='password'
             placeholder='Password'
             label='Password'
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={setPassword}
             value={password}
           />
           <Button type='filled' text='Login' onClick={handleSubmit} />
