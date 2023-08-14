@@ -21,7 +21,7 @@ const Employees = () => {
         <SubHeader title='Employee List'>
           <SubheaderBtn onClick={handleCreateClick} type='create' />
         </SubHeader>
-        <Table employees={employeeList} />
+        <Table employeeList={employeeList} />
       </div>
     </div>
   );

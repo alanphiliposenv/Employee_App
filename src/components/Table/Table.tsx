@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import './styles.css';
 import Status from '../Status/Status';
 import { useNavigate } from 'react-router-dom';
@@ -14,7 +14,7 @@ type Employee = {
 };
 
 type TablePropTypes = {
-  employees: Employee[];
+  employeeList: Employee[];
 };
 
 const tableHeadings = [
@@ -27,7 +27,8 @@ const tableHeadings = [
   'Action'
 ];
 
-const Table: FC<TablePropTypes> = ({ employees }) => {
+const Table: FC<TablePropTypes> = ({ employeeList }) => {
+  const [employees, setEmployees] = useState(employeeList);
   const navigate = useNavigate();
 
   const handleRowClick = (id: number) => {
@@ -63,7 +64,14 @@ const Table: FC<TablePropTypes> = ({ employees }) => {
               </td>
               <td>
                 <div className='employee-table-action-buttons'>
-                  <SvgIcon className='delete-icon employee-table-action-icon' icon='delete' />
+                  <SvgIcon
+                    className='delete-icon employee-table-action-icon'
+                    icon='delete'
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setEmployees(employees.filter((emp) => employee.id !== emp.id));
+                    }}
+                  />
                   <SvgIcon
                     className='edit-icon employee-table-action-icon'
                     icon='edit'

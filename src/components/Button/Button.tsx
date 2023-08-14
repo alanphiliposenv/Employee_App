@@ -1,15 +1,15 @@
 import { FC } from 'react';
 import './styles.css';
 
-type ButtonPropTypes = {
-  text: string;
-  type: 'filled' | 'empty';
-  onClick: (e) => void;
+export type ButtonPropTypes = {
+  text?: string;
+  type?: 'filled' | 'empty';
+  onClick?: (e) => void;
 };
 
 const Button: FC<ButtonPropTypes> = ({ text, onClick, type }) => {
   return (
-    <button onClick={onClick} className={`btn ${type}`}>
+    <button onClick={onClick} className={`btn ${type}`} data-testid='button-test'>
       {text}
     </button>
   );
