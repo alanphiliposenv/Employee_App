@@ -1,0 +1,15 @@
+.employee-page {
+  height: 100%;
+  background: #fafafa 0% 0% no-repeat padding-box;
+}
+
+.dashboard {
+  height: calc(100% - 77px);
+  min-width: calc(100% - 300px);
+  position: fixed;
+  top: 77px;
+  left: 300px;
+  padding: 20px;
+  overflow-y: scroll;
+  display: block;
+}

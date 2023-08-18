@@ -3,10 +3,6 @@
   flex-direction: column;
 }
 
-select:invalid {
-    color: gray;
-}
-
 .form-dropdown-select {
     margin-top: 8px;
     height: 45px;

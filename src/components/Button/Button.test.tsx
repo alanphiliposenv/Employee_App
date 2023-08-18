@@ -35,7 +35,7 @@ describe('if button works properly', () => {
     const element = screen.getByTestId('button-test');
 
     fireEvent.click(element);
-    expect(onClick).toBeCalled();
+    expect(onClick).toBeCalledTimes(1);
   });
   test('snapshot redered', () => {
     const ButtonProps: ButtonPropTypes = {

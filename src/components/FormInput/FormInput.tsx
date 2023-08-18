@@ -1,19 +1,21 @@
 import { FC } from 'react';
 import './styles.css';
 
-type InputPropTypes = {
-  type: 'text' | 'password';
-  placeholder: string;
+export type InputPropTypes = {
+  type?: 'text' | 'password';
+  placeholder?: string;
   label?: string;
-  value: string;
-  onChange: (v: string) => void;
+  value?: string;
+  onChange?: (v: string) => void;
   disabled?: boolean;
 };
 
 const FormInput: FC<InputPropTypes> = ({ type, placeholder, label, value, onChange, disabled }) => {
   return (
     <div className='text-form-input'>
-      <label className='form-input-label'>{label}</label>
+      <label className='form-input-label' data-testid='form-input-label'>
+        {label}
+      </label>
       <input
         disabled={disabled}
         className='form-input'
@@ -21,6 +23,7 @@ const FormInput: FC<InputPropTypes> = ({ type, placeholder, label, value, onChan
         placeholder={placeholder}
         value={value}
         onChange={(e) => onChange(e.target.value)}
+        data-testid='form-input-field'
       />
     </div>
   );

@@ -1,11 +1,9 @@
-import Sidebar from '../../components/Sidebar/Sidebar';
-import Header from '../../components/Header/Header';
 import SubHeader from '../../components/SubHeader/SubHeader';
-import Table from '../../components/Table/Table';
+import EmployeeList from '../../components/EmployeeList/EmployeeList';
 import './styles.css';
-import employeeList from '../../employeeList';
 import SubheaderBtn from '../../components/SubheaderBtn/SubheaderBtn';
 import { useNavigate } from 'react-router-dom';
+import EmployeeLayout from '../../layouts/EmployeeLayout/EmployeeLayout';
 
 const Employees = () => {
   const navigate = useNavigate();
@@ -13,17 +11,15 @@ const Employees = () => {
     navigate('/employee/create');
   };
 
+  const role = localStorage.getItem('role');
+
   return (
-    <div className='employee-page'>
-      <Header />
-      <Sidebar text='Employee List' />
-      <div className='dashboard'>
-        <SubHeader title='Employee List'>
-          <SubheaderBtn onClick={handleCreateClick} type='create' />
-        </SubHeader>
-        <Table employeeList={employeeList} />
-      </div>
-    </div>
+    <EmployeeLayout>
+      <SubHeader title='Employee List'>
+        { role === 'admin' && <SubheaderBtn onClick={handleCreateClick} type='create' />}
+      </SubHeader>
+      <EmployeeList />
+    </EmployeeLayout>
   );
 };
 

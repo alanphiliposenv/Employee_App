@@ -1,31 +1,48 @@
 import { FC } from 'react';
 import './styles.css';
 
-type InputPropTypes = {
-  placeholder: string;
+export type DropdownOptionsType = {
   label: string;
-  options: string[];
-  value: string;
-  onChange: (v: string) => void;
+  value: string | number;
 };
 
-const FormDropdown: FC<InputPropTypes> = ({ label, value, onChange, options, placeholder }) => {
+export type FormDropdownPropType = {
+  placeholder?: string;
+  label?: string;
+  options: DropdownOptionsType[];
+  value?: string | number;
+  onChange?: (v) => void;
+};
+
+const FormDropdown: FC<FormDropdownPropType> = ({
+  label,
+  value,
+  onChange,
+  options,
+  placeholder
+}) => {
   return (
     <div className='form-dropdown'>
-      <label>{label}</label>
+      <label data-testid='form-dropdown-label'>{label}</label>
       <select
         className='form-dropdown-select'
         value={value}
-        style={value === '' ? { color: 'gray' } : { color: 'black' }}
+        style={value === '' || value === -1 ? { color: 'gray' } : { color: 'black' }}
         onChange={(e) => onChange(e.target.value)}
+        data-testid='form-dropdown-select'
       >
-        <option value='' disabled hidden>
+        <option
+          value={typeof value === 'number' ? -1 : ''}
+          disabled
+          hidden
+          data-testid='form-dropdown-placeholder'
+        >
           {placeholder}
         </option>
         {options.map((option) => {
           return (
-            <option key={option} value={option}>
-              {option}
+            <option key={option.value} value={option.value} data-testid='form-dropdown-option'>
+              {option.label}
             </option>
           );
         })}

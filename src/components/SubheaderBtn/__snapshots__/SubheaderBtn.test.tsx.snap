@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test for Subheader button snapshot redered with create 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="subheader-btn"
+        data-testid="subheader-btn"
+      >
+        <div
+          class="subheader-btn-icon"
+        >
+          <svg
+            class="subheader-btn-svg svg-icon"
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+            />
+          </svg>
+        </div>
+        <div
+          data-testid="subheader-btn-text"
+        >
+          Create Employee
+        </div>
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="subheader-btn"
+      data-testid="subheader-btn"
+    >
+      <div
+        class="subheader-btn-icon"
+      >
+        <svg
+          class="subheader-btn-svg svg-icon"
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+          />
+        </svg>
+      </div>
+      <div
+        data-testid="subheader-btn-text"
+      >
+        Create Employee
+      </div>
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`test for Subheader button snapshot redered with edit 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="subheader-btn"
+        data-testid="subheader-btn"
+      >
+        <div
+          class="subheader-btn-icon"
+        >
+          <svg
+            class="subheader-btn-svg svg-icon"
+            height="22.27"
+            viewBox="0 0 22.267 22.27"
+            width="22.267"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M24.632,1.391a3.415,3.415,0,0,0-4.831,0L6.258,14.934a.744.744,0,0,0-.2.334L4.282,21.7a.758.758,0,0,0,.934.934l6.43-1.78a.743.743,0,0,0,.334-.2L25.523,7.113a3.422,3.422,0,0,0,0-4.831ZM7.913,15.426,19,4.342,22.57,7.916,11.487,19ZM7.2,16.859l2.855,2.855-3.95,1.094ZM24.45,6.038l-.805.805L20.07,3.269l.805-.805a1.9,1.9,0,0,1,2.683,0l.891.891A1.9,1.9,0,0,1,24.45,6.038Z"
+              data-name="Path 327"
+              id="Path_327"
+              transform="translate(-4.253 -0.39)"
+            />
+          </svg>
+        </div>
+        <div
+          data-testid="subheader-btn-text"
+        >
+          Edit Employee
+        </div>
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="subheader-btn"
+      data-testid="subheader-btn"
+    >
+      <div
+        class="subheader-btn-icon"
+      >
+        <svg
+          class="subheader-btn-svg svg-icon"
+          height="22.27"
+          viewBox="0 0 22.267 22.27"
+          width="22.267"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M24.632,1.391a3.415,3.415,0,0,0-4.831,0L6.258,14.934a.744.744,0,0,0-.2.334L4.282,21.7a.758.758,0,0,0,.934.934l6.43-1.78a.743.743,0,0,0,.334-.2L25.523,7.113a3.422,3.422,0,0,0,0-4.831ZM7.913,15.426,19,4.342,22.57,7.916,11.487,19ZM7.2,16.859l2.855,2.855-3.95,1.094ZM24.45,6.038l-.805.805L20.07,3.269l.805-.805a1.9,1.9,0,0,1,2.683,0l.891.891A1.9,1.9,0,0,1,24.45,6.038Z"
+            data-name="Path 327"
+            id="Path_327"
+            transform="translate(-4.253 -0.39)"
+          />
+        </svg>
+      </div>
+      <div
+        data-testid="subheader-btn-text"
+      >
+        Edit Employee
+      </div>
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

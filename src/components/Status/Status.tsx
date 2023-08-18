@@ -1,14 +1,15 @@
 import { FC } from 'react';
 import './styles.css';
 
-type StatusPropTypes = {
+export type StatusPropTypes = {
   status: string;
 };
 
 const statusMap = {
   active: { text: 'Active', className: 'active' },
   inactive: { text: 'Inactive', className: 'inactive' },
-  probation: { text: 'Probation', className: 'probation' }
+  probation: { text: 'Probation', className: 'probation' },
+  ['']: { text: 'Unknown', className: 'inactive' }
 };
 
 const Status: FC<StatusPropTypes> = ({ status }) => {

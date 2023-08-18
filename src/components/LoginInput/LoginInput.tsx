@@ -1,12 +1,11 @@
 import { FC } from 'react';
 import './styles.css';
 
-type InputPropTypes = {
-  type: 'text' | 'password';
-  placeholder: string;
-  label: string;
-  value: string;
-  onChange: (v) => void;
+export type InputPropTypes = {
+  type?: 'text' | 'password';
+  label?: string;
+  value?: string;
+  onChange?: (v) => void;
 };
 
 const Input: FC<InputPropTypes> = ({ type, label, value, onChange }) => {
@@ -18,8 +17,11 @@ const Input: FC<InputPropTypes> = ({ type, label, value, onChange }) => {
         placeholder=''
         value={value}
         onChange={(e) => onChange(e.target.value)}
+        data-testid='login-input-field'
       />
-      <label className='login-input-label'>{label}</label>
+      <label className='login-input-label' data-testid='login-input-label'>
+        {label}
+      </label>
     </div>
   );
 };
