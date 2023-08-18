@@ -1,0 +1,19 @@
+.status {
+  width: 111px;
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.active {
+    background: #D3F4BE;
+}
+
+.inactive {
+    background-color: #FFBFBF;
+}
+
+.probation {
+    background-color: #F5ECB8;
+}

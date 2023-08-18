@@ -1,0 +1,37 @@
+.login-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.login-input-label {
+    padding: 2px 4px;
+    background-color: white;
+    margin-left: 10px;
+    letter-spacing: 0px;
+    position: absolute;
+    transition: all 200ms;
+    top: 40%;
+    font-size: 16px;
+    opacity: 0.5;
+    color: #000000;
+}
+
+.login-input-text-field {
+    margin-top: 8px;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 10px;
+    border: 1px solid #B4B7BD;
+    border-radius: 5px;
+    outline: none;
+    caret-color: #1EB4F0;
+}
+
+.login-input-text-field:focus + .login-input-label,
+.login-input-text-field:not(:placeholder-shown) + .login-input-label {
+    top: 0;
+    opacity: 1;
+    font-size: 14px;
+    color: #1EB4F0;
+}

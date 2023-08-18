@@ -1,0 +1,42 @@
+.edit-employee-form {
+    background: #fdfdfd 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #9d9d9d29;
+    border-radius: 10px;
+    padding: 34px;
+    margin-top: 22px;
+}
+
+.edit-employee-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.edit-employee-form > * {
+  flex: 0 0 30%;
+  margin-bottom: 32px;
+}
+
+.edit-employee-address-inputs {
+    flex: 0 0 66.67%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 250px;
+    column-gap: 5%;
+}
+
+.edit-employee-address-inputs > * {
+    width: 45.45%;
+}
+
+.edit-employee-form-buttons {
+    flex: 0 0 100%;
+}
+
+.edit-employee-form-buttons > * {
+    width: 150px;
+    height: 35px;
+    margin-right: 16px;
+    margin-top: 8px;
+}
